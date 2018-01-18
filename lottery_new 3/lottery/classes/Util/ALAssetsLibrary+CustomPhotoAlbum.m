@@ -64,7 +64,7 @@
 								//photo albums are over, target album does not exist, thus create it
 								
 								__weak ALAssetsLibrary* weakSelf = self;
-								[TSMessage showNotificationWithTitle:@"又创建了一个小加的相册" type:TSMessageNotificationTypeWarning]; // todo ...
+								[TSMessage showNotificationWithTitle:@"I created another photo album." type:TSMessageNotificationTypeWarning]; // todo ...
 								NSLog(@"add addAssetsGroupAlbumWithName ");
 								//create new assets album
 								[self addAssetsGroupAlbumWithName:albumName

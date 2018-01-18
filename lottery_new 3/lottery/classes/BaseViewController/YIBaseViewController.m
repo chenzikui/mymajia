@@ -77,6 +77,7 @@
 //    self.navigationItem.rightBarButtonItems = @[feedbackItem];
 //#endif
     self.navigationItem.rightBarButtonItems = @[flexItem];
+
 	/*
     // 左侧按钮
     if (mGlobalData.homeVc == nil
@@ -93,11 +94,24 @@
 	 */
 }
 
-#if DEBUG
+//#if DEBUG
 - (void)flexButtonTapped:(id)sender {
-    [[FLEXManager sharedManager] showExplorer];
+    
+//#if DEBUG
+//    [[FLEXManager sharedManager] showExplorer];
+//#else
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Warning" message:@"The function is waiting for the next update. Please don't worry." preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alert addAction:cancel];
+    [self presentViewController:alert animated:YES completion:^{
+        
+    }];
+//#endif
+
 }
-#endif
+//#endif
 
 //- (void)homeButtonTapped:(id)sender {
 //    YIIndexVc *vc = [[YIIndexVc alloc] init];
