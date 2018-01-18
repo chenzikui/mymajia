@@ -1,2 +1,0 @@
-# mymajia
-dddd
