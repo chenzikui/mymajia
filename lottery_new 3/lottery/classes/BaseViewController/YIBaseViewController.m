@@ -76,7 +76,7 @@
 //#else
 //    self.navigationItem.rightBarButtonItems = @[feedbackItem];
 //#endif
-    self.navigationItem.rightBarButtonItems = @[flexItem];
+//    self.navigationItem.rightBarButtonItems = @[flexItem];
 
 	/*
     // 左侧按钮
@@ -196,7 +196,7 @@
 
 - (void)showLoadingViewDefaultText {
     [self hideKeyboard:nil];
-    [self showLoadingViewWithText:@"正在加载中..."];
+    [self showLoadingViewWithText:@"loading..."];
 }
 
 #pragma mark -

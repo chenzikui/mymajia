@@ -188,7 +188,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
-    cell.textLabel.text = @"敬请期待~";
+    cell.textLabel.text = @"wait 0.0 ~";
 
     return cell;
 }

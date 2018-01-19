@@ -8,18 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-/*
- e11x5  11选5
- xglhc  六合彩
- ssc    时时彩
- shssl  上海时时乐
- pl3    排列三
- pk10   PK10
- pcdd   PC蛋蛋
- klsf   快乐十分
- k3     快三
- fc3d   福彩3D
- */
+
 typedef enum : NSUInteger {
     
     CPLotteryResultForE11X5     = 0,

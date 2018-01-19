@@ -18,7 +18,8 @@
 
 + (NSString *)appName {
     NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
-    return appName;
+//    return appName;
+    return @"ArtHome";
 }
 
 + (UIImage *)appIconImage; {

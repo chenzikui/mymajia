@@ -108,7 +108,7 @@ static CPBusinessControllerManager *shareManager;
                
            } failure:^(__kindof SUMRequest *request) {
                
-               [SVProgressHUD way_dismissThenShowInfoWithStatus:@"网络异常"];
+               [SVProgressHUD way_dismissThenShowInfoWithStatus:@"net error"];
            }];
 
 }

@@ -2848,7 +2848,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: wenqiang kang (T9536E7LAQ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MU834HKCXQ;
 				ENABLE_BITCODE = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/lottery/Header.pch";
@@ -2880,7 +2880,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: wenqiang kang (T9536E7LAQ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MU834HKCXQ;
 				ENABLE_BITCODE = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/lottery/Header.pch";

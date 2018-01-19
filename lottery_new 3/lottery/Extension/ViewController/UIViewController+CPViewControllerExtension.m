@@ -47,7 +47,7 @@
     
     //长按手势
     if (longPress.state == UIGestureRecognizerStateBegan) {
-        UIActionSheet  *actionSheet = [[UIActionSheet alloc]initWithTitle:@"保存图片" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"保存图片到相册",nil];
+        UIActionSheet  *actionSheet = [[UIActionSheet alloc]initWithTitle:@"save" delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:nil otherButtonTitles:@"Save pictures to albums",nil];
         actionSheet.tag = 106;
         actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
         [actionSheet showInView:self.view];
@@ -66,9 +66,9 @@
 - (void)cp_ImageSavedToPhotosAlbum:(UIImage*)image didFinishSavingWithError:  (NSError*)error contextInfo:(id)contextInfo
 {
     if (!error) {
-        [SVProgressHUD way_showInfoCanTouchAutoDismissWithStatus:@"保存图片成功"];
+        [SVProgressHUD way_showInfoCanTouchAutoDismissWithStatus:@"Save picture success"];
     }else{
-        [SVProgressHUD way_showInfoCanTouchAutoDismissWithStatus:@"保存图片失败"];
+        [SVProgressHUD way_showInfoCanTouchAutoDismissWithStatus:@"Save picture failure"];
     }
 }
 
@@ -77,7 +77,7 @@
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     NSString *title = [actionSheet buttonTitleAtIndex:buttonIndex];
-    if ([title isEqualToString:@"保存图片到相册"]) {
+    if ([title isEqualToString:@"Save pictures to albums"]) {
         [self cp_ScreenShotWithView:self.view];
     }
 }

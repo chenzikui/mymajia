@@ -16,7 +16,7 @@ typedef enum : NSUInteger {
     //重庆幸运农场||广东快乐十分
     CPBuyLotteryTypeSpecailOne  = 1,
     
-    //六合彩
+    // 
     CPBuyLotteryTypeSpecailTwo  = 2,
     
 } CPBuyLotteryType;

@@ -15,13 +15,13 @@ typedef enum : NSUInteger {
     //自选下注
     CPBuyLotteryBetCustom       = 1,
     
-    //六合彩合肖
+    //六 合 彩合肖
     CPBuyLotteryBetForHeXiao    = 2,
     
     //连肖连尾
     CPBuyLotteryBetForLianXiaoWei    = 3,
     
-    //六合彩的横向排布视图
+    //六 合 彩的横向排布视图
     CPBuyLotteryBetForLHCHorizontalViewStyle    = 4
 
     

@@ -99,7 +99,7 @@
 -(void)rightItemAction
 {
     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [CPSelectedOptionsAgoView showWithOnView:app.window title:@"选择彩票类型" options:_typeNameList selectedIndex:self.selectedTypeIndex selected:^(NSInteger index) {
+    [CPSelectedOptionsAgoView showWithOnView:app.window title:@"选择彩-票类型" options:_typeNameList selectedIndex:self.selectedTypeIndex selected:^(NSInteger index) {
         
         if (index != self.selectedTypeIndex) {
             self.selectedTypeIndex = index;

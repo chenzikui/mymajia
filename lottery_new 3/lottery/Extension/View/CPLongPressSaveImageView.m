@@ -46,7 +46,7 @@
 
     //长按手势
     if (longPress.state == UIGestureRecognizerStateBegan && self.image) {
-        UIActionSheet  *actionSheet = [[UIActionSheet alloc]initWithTitle:@"保存图片" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"保存图片到手机",nil];
+        UIActionSheet  *actionSheet = [[UIActionSheet alloc]initWithTitle:@"save" delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:nil otherButtonTitles:@"Save pictures to iphone",nil];
         actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
         [actionSheet showInView:self];
     }
@@ -55,7 +55,7 @@
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     NSString *title = [actionSheet buttonTitleAtIndex:buttonIndex];
-    if ([title isEqualToString:@"保存图片到手机"]) {
+    if ([title isEqualToString:@"Save pictures to iphone"]) {
         UIImageWriteToSavedPhotosAlbum(self.image, self, @selector(imageSavedToPhotosAlbum:didFinishSavingWithError:contextInfo:), nil);
     }
 }
@@ -64,9 +64,9 @@
 - (void)imageSavedToPhotosAlbum:(UIImage*)image didFinishSavingWithError:  (NSError*)error contextInfo:(id)contextInfo
 {
     if (!error) {
-        [SVProgressHUD way_showInfoCanTouchAutoDismissWithStatus:@"保存图片成功"];
+        [SVProgressHUD way_showInfoCanTouchAutoDismissWithStatus:@"Save picture success"];
     }else{
-        [SVProgressHUD way_showInfoCanTouchAutoDismissWithStatus:@"保存图片失败"];
+        [SVProgressHUD way_showInfoCanTouchAutoDismissWithStatus:@"Save picture failure"];
     }
 }
 
